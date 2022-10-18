@@ -46,4 +46,22 @@ section {
     width: 15%;
 }
 
+.project_img {
+    width: 33%;
+}
 
+.div_project {
+    display: inline;
+    min-height: 10000px;
+}
+.center {
+    text-align: center;
+}
+
+#red {
+    background: red;
+}
+
+#green {
+    background-color: green;
+}
