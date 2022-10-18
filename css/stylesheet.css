@@ -1,0 +1,49 @@
+#container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "hd hd hd hd hd"
+    "nv nv nv nv nv"
+    "sc mn mn mn as"
+    "ft ft ft ft ft"
+}
+
+header {
+    grid-area: hd;
+    background: red;
+    height: fit-content;
+}
+
+aside {
+    grid-area: as;
+    background: azure;
+    width: 15%;
+}
+
+main {
+    grid-area: mn;
+    background: royalblue;
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    grid-area: ft;
+    background: ghostwhite;
+}
+
+nav {
+    grid-area: nv;
+    background: white;
+    height: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+section {
+    grid-area: sc;
+    background: white;
+    width: 15%;
+}
+
+
