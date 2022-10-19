@@ -16,14 +16,14 @@ header {
 
 aside {
     grid-area: as;
-    background: azure;
-    width: 15%;
+    background: lightblue;
+    width: 15vw;
 }
 
 main {
     grid-area: mn;
-    background: royalblue;
-    width: 70%;
+    background: white;
+    width: 70vw;
     margin: auto;
 }
 
@@ -42,8 +42,8 @@ nav {
 
 section {
     grid-area: sc;
-    background: white;
-    width: 15%;
+    background: lightblue;
+    width: 15vw;
 }
 
 .project_img {
@@ -51,9 +51,9 @@ section {
 }
 
 .div_project {
-    display: inline;
+    display: inline-block;
     text-align: center;
-    height: 5000px;
+    width: 33%;
 }
 .center {
     text-align: center;
