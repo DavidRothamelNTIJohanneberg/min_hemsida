@@ -1,30 +1,40 @@
+body {
+    margin: 0px
+    
+}
+
 #container {
     display: grid;
+    background-color: black;
     height: 100vh;
+    grid-template-rows: 2fr 2fr 12fr 3fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-    "hd hd hd hd hd"
+    "hd hd hd hd hd"    
     "nv nv nv nv nv"
-    "sc mn mn mn as"
+    "mb mb mb mb mb"
     "ft ft ft ft ft"
+}
+
+#midbox {
+    background-color: blue;
+    grid-area: mb;
+    display: flex;
+    margin: 5px;
 }
 
 header {
     grid-area: hd;
     background: red;
-    height: fit-content;
 }
 
 aside {
-    grid-area: as;
     background: lightblue;
-    width: 15vw;
 }
 
 main {
-    grid-area: mn;
     background: white;
-    width: 70vw;
-    margin: auto;
+    margin: 5px;
 }
 
 footer {
@@ -35,15 +45,12 @@ footer {
 nav {
     grid-area: nv;
     background: white;
-    height: 3rem;
     display: grid;
     grid-template-columns: repeat(5, 20%);
 }
 
 section {
-    grid-area: sc;
     background: lightblue;
-    width: 15vw;
 }
 
 .project_img {
@@ -65,4 +72,10 @@ section {
 
 #green {
     background-color: green;
+}
+
+div.blogg > div#midbox {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
 }
