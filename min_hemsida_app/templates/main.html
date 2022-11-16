@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="../static/stylesheet.css">
     <title>Davids hemsida</title>
 </head>
 <body>
     <div id="container" id="index">
         <header><h1>Hem</h1></header>
         <nav>
-            <button class="nav_button" onclick="document.location='index.html'">Hem</button>
-            <button class="nav_button" onclick="document.location='mina_projekt.html'">Mina projekt</button>
-            <button class="nav_button" onclick="document.location='mina_hemsidor.html'">Mina hemsidor</button>
-            <button class="nav_button" onclick="document.location='blogg.html'">Blogg</button>
-            <button class="nav_button" onclick="document.location='om_mig.html'">Om mig</button>
+            <form action="http://127.0.0.1:5000">
+                <input type="submit" value="Hem"/>
+            </form>
+            <form action="http://127.0.0.1:5000/blogg">
+                <input type="submit" value="Blogg"/>
+            </form>
+            <form action="http://127.0.0.1:5000/mina_hemsidor">
+                <input type="submit" value="Mina hemsidor"/>
+            </form>
+            <form action="http://127.0.0.1:5000/mina_projekt">
+                <input type="submit" value="Mina projekt"/>
+            </form>
+            <form action="http://127.0.0.1:5000/om_mig">
+                <input type="submit" value="Om mig"/>
+            </form>
         </nav>
         <div id="midbox">
             <section class="side">section</section>

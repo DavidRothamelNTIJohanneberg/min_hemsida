@@ -1,6 +1,9 @@
+html {
+    font-family: sans-serif;
+}
+
 body {
     margin: 0px
-    
 }
 
 #container {
@@ -25,7 +28,10 @@ body {
 
 header {
     grid-area: hd;
+    display: flex;
     background: red;
+    justify-content: space-between;
+    align-items: center;
 }
 
 aside {
@@ -45,8 +51,10 @@ footer {
 nav {
     grid-area: nv;
     background: white;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 section {
@@ -74,8 +82,47 @@ section {
     background-color: green;
 }
 
-div.blogg > div#midbox {
+div#midbox {
     background-color: white;
     display: flex;
     justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 1fr;
+    background-color: red;
+    margin: 0px;
+}
+
+input {
+    width: 1fr;
+    height: 100%;
+    margin: 0px;
+}
+
+.action {
+    border: 2px;
+    border-color: black;
+    border-style: ridge;
+    padding: 5px;
+    background-color: white;
+}
+
+.post {
+    background-color: lightblue;
+}
+
+#midmid > header {
+    background-color: lightblue;
+}
+
+.post > header {
+    background-color: lightblue;
 }
